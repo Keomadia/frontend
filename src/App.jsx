@@ -1,27 +1,29 @@
-import React, { useState } from "react";
-import { HashRouter , Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Course from "./pages/Course";
 import Assignment from "./pages/Assignment";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
-import { UserProvider} from './UserContext'
-function App() {
- 
+import NotFound from "./pages/NotFound"; // Import 404 page
+import { UserProvider } from "./UserContext";
 
+function App() {
   return (
     <UserProvider>
-      <HashRouter >
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard  />} />
-          <Route path="/course" element={<Course  />} />
-          <Route path="/outline" element={<Course  />} />
-          <Route path="/assignment" element={<Assignment  />} />
-          <Route path="/profile" element={<Profile  />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/outline" element={<Course />} />
+          <Route path="/assignment" element={<Assignment />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/login/lecturer" element={<Login val={true} />} />
-          <Route path="/login/student" element={<Login  val={false} />} />
+          <Route path="/login/student" element={<Login val={false} />} />
+          {/* Catch-all route for 404 page */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </HashRouter >
+      </BrowserRouter>
     </UserProvider>
   );
 }
