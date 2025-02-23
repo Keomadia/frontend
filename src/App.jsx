@@ -14,12 +14,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard  />} />
-          {/* <Route path="/course" element={<Course  />} />
+          <Route path="/course" element={<Course  />} />
           <Route path="/outline" element={<Course  />} />
           <Route path="/assignment" element={<Assignment  />} />
           <Route path="/profile" element={<Profile  />} />
           <Route path="/login/lecturer" element={<Login val={true} />} />
-          <Route path="/login/student" element={<Login  val={false} />} /> */}
+          <Route path="/login/student" element={<Login  val={false} />} />
         </Routes>
       </BrowserRouter>
     </UserProvider>
