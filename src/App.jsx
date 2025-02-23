@@ -5,12 +5,12 @@ import Course from "./pages/Course";
 import Assignment from "./pages/Assignment";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
-import NotFound from "./pages/NotFound"; // Import 404 page
-import { UserProvider } from "./UserContext";
+import NotFound from "./pages/NotFound"; 
+ 
 
 function App() {
   return (
-    <UserProvider>
+ 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -18,13 +18,13 @@ function App() {
           <Route path="/outline" element={<Course />} />
           <Route path="/assignment" element={<Assignment />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/login/lecturer" element={<Login val={true} />} />
-          <Route path="/login/student" element={<Login val={false} />} />
-          {/* Catch-all route for 404 page */}
+          <Route path="/login/lecturer" element={<Login  />} />
+          <Route path="/login/student" element={<Login />} />
+  
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </UserProvider>
+ 
   );
 }
 

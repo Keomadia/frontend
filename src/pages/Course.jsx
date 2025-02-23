@@ -3,18 +3,9 @@ import Sidebar from "../components/Sidebar";
 import {  getPersonRole } from "../utils/helpers";
 import ModuleContainer from "../components/ModuleContainer";
 import '../csspages/Course.css'
-import { UserContext } from "../UserContext";
-import { useContext } from "react";
-
+ 
 function Course() {
-  
-  // const { role } = useContext(UserContext);
-  // if (!role) {
-  //   return <div>Loading...</div>; // Or redirect to login
-  // }
-  // const personRole = role.role
-  // alert(role.username)
-  // alert(role.role)
+ 
   const personRole = getPersonRole()
   const cc = ["CSC 101","CSC 102","CSC 121","CSC 202","CSC 210","CSC 305","CSC 311","CSC 402","CSC 402","CSC 410","CSC 499",];
   const courseOutline = [

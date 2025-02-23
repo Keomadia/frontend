@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import '../csspages/Login.css'
-import { UserContext } from "../UserContext";
+ 
 import { getPersonRole } from "../utils/helpers";
 
-const Login = ({val = false }) => {
+const Login = ( ) => {
   const navigate = useNavigate();
-  const { setRole } = useContext(UserContext);
+ 
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");

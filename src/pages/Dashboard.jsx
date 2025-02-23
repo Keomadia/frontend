@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { UserContext } from "../UserContext";
 
 function Dashboard() {
-  const { role } = useContext(UserContext);
+ 
   // if (!role) {
   //   return <div>Loading...</div>; // Or redirect to login
   // }

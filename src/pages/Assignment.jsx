@@ -7,7 +7,7 @@ import UploadBox from "../components/UploadBox";
 import NewAssignmentBox from "../components/NewAssignmentBox";
 import "../csspages/Assignment.css";
 import pic from "/vite.svg";
-import { UserContext } from "../UserContext";
+ 
 
 function Assignment() {
 

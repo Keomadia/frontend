@@ -4,9 +4,7 @@ import Table from "../components/Table";
 import ProfilePic from "../components/ProfilePic";
 import "../csspages/Dashboard.css";
 import { capitalizeKey , getPersonRole } from "../utils/helpers";
-import { UserContext } from "../UserContext";
-import { useContext } from "react";
-
+ 
 function Profile() {
   const cc = ["CSC 101","CSC 102","CSC 121","CSC 202","CSC 210","CSC 305","CSC 311","CSC 402","CSC 402","CSC 410","CSC 499",];
 
