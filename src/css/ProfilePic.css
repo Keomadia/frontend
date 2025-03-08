@@ -3,8 +3,9 @@
     height: 200px;
     border-radius: 50%;
     border: 5px solid rgb(48, 48, 48);
-    background-color: #e3fff3;
-    color: #023e7d;
+    color: rgba(44, 44, 44, 0.87);
+    background-color: #ffffffec;
+
     align-items: center;
     display: flex;
     justify-content: center;
